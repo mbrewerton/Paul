@@ -1,0 +1,16 @@
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\bin\Debug\DAL.exe.config
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\bin\Debug\DAL.exe
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\bin\Debug\DAL.pdb
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\obj\Debug\DAL.exe
+C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\DAL\obj\Debug\DAL.pdb
+C:\Users\Matt\documents\visual studio 2013\Projects\Paul\DAL\obj\Debug\DAL.Migrations.Film.resources
+C:\Users\Matt\documents\visual studio 2013\Projects\Paul\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+C:\Users\Matt\documents\visual studio 2013\Projects\Paul\DAL\obj\Debug\DAL.Migrations.IntToDouble.resources
+C:\Users\Matt\documents\visual studio 2013\Projects\Paul\DAL\obj\Debug\DAL.Migrations.IntToDoubleRating.resources
+C:\Users\Matt\documents\visual studio 2013\Projects\Paul\DAL\obj\Debug\DAL.Migrations.DoubleToDecimal.resources
+C:\Users\Matt\documents\visual studio 2013\Projects\Paul\DAL\obj\Debug\DAL.Migrations.AddedWatchedField.resources

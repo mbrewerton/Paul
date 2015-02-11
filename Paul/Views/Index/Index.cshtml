@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+@model List<DAL.Models.Film>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Paul Walker Tracker</title>
+</head>
+<body>
+<div>
+    @using (Html.BeginForm())
+    {
+        <div>
+            @Html.Label("LabelText");
+        </div>
+    }
+    @Model.Count
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Film Name
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+        @foreach (var film in Model)
+        {
+            <tr>
+                <td>
+                    @film.FilmName
+                </td>
+            </tr>
+        }
+        </tbody>
+
+        <tfoot>
+        
+        </tfoot>
+    </table>
+</div>
+
+<div class="films-list">
+    @RenderPage("_FilmsList.cshtml")
+</div>
+</body>
+</html>
