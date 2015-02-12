@@ -104,6 +104,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\Index\Index.cshtml" />
     <Content Include="Views\Index\_FilmsList.cshtml" />
+    <Content Include="Views\Index\_FullList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

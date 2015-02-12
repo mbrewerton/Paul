@@ -22,3 +22,27 @@ C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\Paul\bin\EntityFramewor
 C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\Paul\bin\EntityFramework.SqlServer.xml
 C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\Paul\bin\DAL.exe
 C:\Users\Matt\Documents\Visual Studio 2013\Projects\Paul\Paul\bin\DAL.pdb
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\Paul.dll.config
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\Paul.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\Paul.pdb
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\DAL.exe
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\EntityFramework.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\EntityFramework.SqlServer.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Helpers.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Mvc.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Razor.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Webpages.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Webpages.Razor.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\DAL.pdb
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\EntityFramework.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\EntityFramework.SqlServer.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Razor.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Webpages.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Webpages.Razor.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Helpers.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Mvc.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\obj\Debug\Paul.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\Paul\Paul\obj\Debug\Paul.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\obj\Debug\Paul.pdb

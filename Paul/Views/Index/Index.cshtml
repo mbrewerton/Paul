@@ -11,38 +11,18 @@
     <title>Paul Walker Tracker</title>
 </head>
 <body>
-<div>
+<div class="query">
     @using (Html.BeginForm())
     {
         <div>
-            @Html.Label("LabelText");
+            @Html.Label("Search:");
+            <input value="Search" placeholder="Search..."/>
         </div>
     }
-    @Model.Count
-    <table>
-        <thead>
-            <tr>
-                <th>
-                    Film Name
-                </th>
-            </tr>
-        </thead>
+</div>
 
-        <tbody>
-        @foreach (var film in Model)
-        {
-            <tr>
-                <td>
-                    @film.FilmName
-                </td>
-            </tr>
-        }
-        </tbody>
-
-        <tfoot>
-        
-        </tfoot>
-    </table>
+<div class="full-list">
+    @RenderPage("_FullList.cshtml")
 </div>
 
 <div class="films-list">
