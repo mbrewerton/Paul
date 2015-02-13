@@ -1,7 +1,8 @@
 ﻿@{
     Layout = null;
 }
-@model List<DAL.Models.Film>
+@using DAL.Models
+@model List<Film>
 
 <!DOCTYPE html>
 
@@ -15,10 +16,14 @@
     @using (Html.BeginForm())
     {
         <div>
-            @Html.Label("Search:");
-            <input value="Search" placeholder="Search..."/>
+            @Html.Label("Search:")
+            <input placeholder="Search..."/>
         </div>
     }
+</div>
+
+<div class="add-films">
+    @Html.ActionLink("Add New Film", "Films", "Index")
 </div>
 
 <div class="full-list">

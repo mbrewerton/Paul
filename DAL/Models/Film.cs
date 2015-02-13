@@ -12,7 +12,7 @@ namespace DAL.Models
         public int ReleaseDate { get; set; }
         [Required]
         public string Genre { get; set; }
-        [MaxLength(100), Required]
+        [Required]
         public string Synopsis { get; set; }
         [Required]
         public decimal ImdbRating { get; set; }

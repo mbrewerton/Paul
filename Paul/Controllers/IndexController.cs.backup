@@ -17,5 +17,12 @@ namespace Paul.Controllers
             return View(_db.GetAllFilms());
             //return View(new PaulViewModel());
         }
+
+        [HttpPost]
+        public ActionResult AddFilm(string filmName, string genre, decimal rating, int releaseDate, string synopsis)
+        {
+            _db.AddToDatabase(filmName, genre, rating, releaseDate, synopsis);
+            return View("Index");
+        }
     }
 }

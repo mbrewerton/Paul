@@ -30,3 +30,4 @@ C:\Users\Matt\Documents\GitHub\Paul\DAL\obj\Debug\DAL.Migrations.AddedWatchedFie
 C:\Users\Matt\Documents\GitHub\Paul\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
 C:\Users\Matt\Documents\GitHub\Paul\DAL\obj\Debug\DAL.exe
 C:\Users\Matt\Documents\GitHub\Paul\DAL\obj\Debug\DAL.pdb
+C:\Users\Matt\Documents\GitHub\Paul\DAL\obj\Debug\DAL.Migrations.RemovedMaxLengthFromSynopsis.resources

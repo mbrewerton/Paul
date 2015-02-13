@@ -1,0 +1,14 @@
+﻿@model DAL.Models.Film
+
+@{
+    ViewBag.Title = "CreateNewFilm";
+}
+
+<h2>CreateNewFilm</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.FilmName, "Film Name: ")
+    @Html.EditorFor(m => m.FilmName)
+}

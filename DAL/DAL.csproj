@@ -70,6 +70,10 @@
     <Compile Include="Migrations\201502111547359_AddedWatchedField.Designer.cs">
       <DependentUpon>201502111547359_AddedWatchedField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201502131442246_RemovedMaxLengthFromSynopsis.cs" />
+    <Compile Include="Migrations\201502131442246_RemovedMaxLengthFromSynopsis.Designer.cs">
+      <DependentUpon>201502131442246_RemovedMaxLengthFromSynopsis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DatabaseHelper.cs" />
     <Compile Include="Models\PaulContext.cs" />
@@ -99,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502111547359_AddedWatchedField.resx">
       <DependentUpon>201502111547359_AddedWatchedField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502131442246_RemovedMaxLengthFromSynopsis.resx">
+      <DependentUpon>201502131442246_RemovedMaxLengthFromSynopsis.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
