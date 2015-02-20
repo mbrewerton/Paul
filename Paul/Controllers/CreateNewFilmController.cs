@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Paul.Controllers
 {
-    public class FilmsController : Controller
+    public class CreateNewFilmController : Controller
     {
         // GET: Films
         public ActionResult Index()
@@ -14,8 +14,10 @@ namespace Paul.Controllers
             return View("CreateNewFilm");
         }
 
-        public ActionResult AddFilm()
+        [HttpPost]
+        public ActionResult AddFilm(string filmName)
         {
+            Console.Write("here");
             return null;
         }
     }

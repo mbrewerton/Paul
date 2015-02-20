@@ -44,7 +44,7 @@ namespace DAL
                         break;
 
                     case "psnl":
-                        dbHelper.AddToDatabase(filmName, genre, rating, releaseDate, synopsis);
+                        dbHelper.AddToDatabase(filmName, genre, rating, releaseDate, synopsis, null, false);
                         break;
                 }
                 

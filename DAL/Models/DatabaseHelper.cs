@@ -19,7 +19,7 @@ namespace DAL.Models
             return films;
         }
 
-        public void AddToDatabase(string filmName, string genre, decimal rating, int releaseDate, string synopsis)
+        public void AddToDatabase(string filmName, string genre, decimal imdbRating, int releaseDate, string synopsis, decimal? myRating, bool watched)
         {
             using (var db = new PaulContext())
             {
@@ -27,14 +27,13 @@ namespace DAL.Models
                 {
                     FilmName = filmName,
                     Genre = genre,
-                    MyRating = rating,
+                    ImdbRating = imdbRating,
                     ReleaseDate = releaseDate,
-                    Synopsis = synopsis
+                    Synopsis = synopsis,
+                    MyRating = myRating,
+                    Watched = watched
                 };
-                if (film.MyRating > 10 || film.MyRating < 0)
-                {
-                    throw new Exception("Rating must be between 0 and 10.");
-                }
+
                 db.Film.Add(film);
                 db.SaveChanges();
                 db.Dispose();
@@ -61,18 +60,7 @@ namespace DAL.Models
                 db.Dispose();
             }
         }
-
-        public void AddToDatabase(string filmName, string genre, decimal rating, int releaseDate, string synopsis,
-            bool isTesting)
-        {
-            if (isTesting)
-            {
-                SqlHelper sqlHelper = new SqlHelper();
-                sqlHelper.DropTable("dbo.Films");
-            }
-            AddToDatabase(filmName, genre, rating, releaseDate, synopsis);
-        }
-
+        
         public void AddToDatabase(bool isTesting)
         {
             using (var db = new PaulContext())
