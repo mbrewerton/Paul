@@ -9,6 +9,7 @@ using System.Web.Routing;
 using DAL;
 using DAL.Models;
 using Paul.App_Start;
+using DAL.Mapping;
 
 namespace Paul
 {
@@ -21,6 +22,7 @@ namespace Paul
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             
             Database.SetInitializer(new CreateDatabaseIfNotExists<PaulContext>());
+            AutoMapperServicesConfiguration.Configure();
         }
     }
 }

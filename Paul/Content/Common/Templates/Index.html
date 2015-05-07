@@ -1,2 +1,55 @@
-﻿<input ng-model="searchData.term" placeholder="search..." />{{searchData.term}}
-<button ng-click="search()">Click me</button>
+﻿<h3>Filter By:</h3>
+<input ng-model="searchData.term" placeholder="Search by name..." ng-change="search()" ng-model-options="{ debounce: 250 }"/>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Release Date</th>
+            <th>Genre</th>
+            <th>IMDB Rating</th>
+            <th>My Rating</th>
+            <th>Synopsis</th>
+            <th>Watched</th>
+            <th>Actions</th>
+        </tr>        
+    </thead>
+    <tbody>
+        <tr ng-if="loading">
+            <td colspan="8"><i class="fa fa-spinner fa-spin"></i> Loading data...</td>
+        </tr>
+        <tr ng-if="!loading" ng-repeat="film in films">
+            <td>{{film.Id}}</td>
+            <td>{{film.FilmName}}</td>
+            <td >{{film.ReleaseDate}}</td>
+            <td>{{film.Genre}}</td>
+            <td>{{film.ImdbRating}}</td>
+            <td>{{film.MyRating}}</td>
+            <td>{{film.Synopsis}}</td>
+            <td>{{film.Watched}}</td>
+            <td><button ng-click="toggleEdit(film)">Edit</button></td>
+            <!--<td ng-if="editing"><input ng-model="film.Id" /></td>
+            <td ng-if="editing"><input ng-model="film.FilmName"></td>
+            <td ng-if="editing"><input ng-model="film.ReleaseDate"></td>
+            <td ng-if="editing"><input ng-model="film.Genre"></td>
+            <td ng-if="editing"><input ng-model="film.ImdbRating"></td>
+            <td ng-if="editing"><input ng-model="film.MyRating"></td>
+            <td ng-if="editing"><input ng-model="film.Synopsis"></td>
+            <td ng-if="editing"><input ng-model="film.Watched"></td>
+            <td ng-if="editing"><button ng-click="saveFilm(film)">Save</button></td>-->
+        </tr>
+        <tr>
+            <td colspan="8">
+                <button ng-click="addEmptyFilm()">Add New Film</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div ng-if="editing">
+    <label>Film Name: </label><input type="text" ng-model="filmToEdit.FilmName" />
+    <label>Genre: </label><input type="text" ng-model="filmToEdit.Genre" />
+
+    <button ng-click="toggleEdit()">Cancel</button>
+    <button ng-click="saveFilm(filmToEdit)">Save</button>
+</div>

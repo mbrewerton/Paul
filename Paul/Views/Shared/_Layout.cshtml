@@ -5,11 +5,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul</title>
-    <link rel="stylesheet" href="~/Content/css/site.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    @Html.Raw(
+        Bundle.Css()
+        .Add("~/Content/css/site.min.css")
+        .Add("~/Content/css/toastr.min.css")
+        .Add("~/Content/css/FontAwesome/css/font-awesome.min.css")
+        .Render("~/Content/css/min/style_#.min.css")
+    )
     @Html.Raw(
         Bundle.JavaScript()
         .AddDirectory("~/Content/j/")
-        .Render("~/Content/j/min/jslibs_#.js")
+        .Render("~/Content/j/min/jslibs_#.min.js")
     )
 
 </head>

@@ -128,13 +128,21 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Common\Controllers\editController.js" />
     <Content Include="Content\Common\Controllers\indexController.js" />
-    <Content Include="Content\Common\Resources\searchFactory.js" />
+    <Content Include="Content\Common\Resources\filmFactory.js" />
+    <Content Include="Content\Common\Templates\Edit.html" />
     <Content Include="Content\Common\Templates\Index.html" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
-    <Content Include="Content\css\site.css" />
-    <Content Include="Content\css\site.min.css" />
+    <Content Include="Content\css\FontAwesome\css\font-awesome.min.css" />
+    <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.svg" />
+    <Content Include="Content\css\site.css">
+      <DependentUpon>site.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
     <Content Include="Content\css\toastr.min.css" />
     <Content Include="Content\j\angular-resource.min.js" />
     <Content Include="Content\j\angular-route.min.js" />
@@ -145,15 +153,38 @@
     <Content Include="Content\pageController.js" />
     <Content Include="Content\paul.js" />
     <Content Include="Content\paul.underscore.js" />
-    <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Areas\Paul\Views\Home\Index.cshtml" />
-    <Content Include="Content\css\site.css.map" />
     <Content Include="Content\css\site.scss" />
+    <Content Include="Content\css\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.eot" />
+    <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.woff" />
+    <Content Include="Content\css\FontAwesome\font\FontAwesome.otf" />
+    <Content Include="Content\css\FontAwesome\less\bootstrap.less" />
+    <Content Include="Content\css\FontAwesome\less\core.less" />
+    <Content Include="Content\css\FontAwesome\less\extras.less" />
+    <Content Include="Content\css\FontAwesome\less\font-awesome-ie7.less" />
+    <Content Include="Content\css\FontAwesome\less\font-awesome.less" />
+    <Content Include="Content\css\FontAwesome\less\icons.less" />
+    <Content Include="Content\css\FontAwesome\less\mixins.less" />
+    <Content Include="Content\css\FontAwesome\less\path.less" />
+    <Content Include="Content\css\FontAwesome\less\variables.less" />
+    <Content Include="Content\css\FontAwesome\scss\font-awesome-ie7.scss" />
+    <Content Include="Content\css\FontAwesome\scss\font-awesome.scss" />
+    <Content Include="Content\css\FontAwesome\scss\_bootstrap.scss" />
+    <Content Include="Content\css\FontAwesome\scss\_core.scss" />
+    <Content Include="Content\css\FontAwesome\scss\_extras.scss" />
+    <Content Include="Content\css\FontAwesome\scss\_icons.scss" />
+    <Content Include="Content\css\FontAwesome\scss\_mixins.scss" />
+    <Content Include="Content\css\FontAwesome\scss\_path.scss" />
+    <Content Include="Content\css\FontAwesome\scss\_variables.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -176,7 +207,7 @@
     <Compile Include="Areas\Paul\HomeAreaRegistration.cs" />
     <Compile Include="Controllers\AddFilmController.cs" />
     <Compile Include="Controllers\IndexController.cs" />
-    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\FilmController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

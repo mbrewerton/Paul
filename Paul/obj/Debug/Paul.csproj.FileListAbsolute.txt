@@ -71,3 +71,6 @@ C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\Newtonsoft.Json.xml
 C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Net.Http.Formatting.xml
 C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Http.xml
 C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\System.Web.Http.WebHost.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\AutoMapper.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\AutoMapper.pdb
+C:\Users\Matt\Documents\GitHub\Paul\Paul\bin\AutoMapper.xml

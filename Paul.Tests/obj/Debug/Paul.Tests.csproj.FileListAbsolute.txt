@@ -53,3 +53,6 @@ C:\Users\Matt\Documents\GitHub\Paul\Paul.Tests\bin\Debug\System.Web.Http.xml
 C:\Users\Matt\Documents\GitHub\Paul\Paul.Tests\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\Matt\Documents\GitHub\Paul\Paul.Tests\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Matt\Documents\GitHub\Paul\Paul.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Matt\Documents\GitHub\Paul\Paul.Tests\bin\Debug\AutoMapper.dll
+C:\Users\Matt\Documents\GitHub\Paul\Paul.Tests\bin\Debug\AutoMapper.pdb
+C:\Users\Matt\Documents\GitHub\Paul\Paul.Tests\bin\Debug\AutoMapper.xml

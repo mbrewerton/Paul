@@ -1,7 +1,6 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<div ng-controller="indexController" ng-include="templateUrl.index"></div>
-
-<h1>Here</h1>
+@*<button ng-click="toggleIndex()">Index</button> <button ng-click="toggleEdit()">Edit</button>*@
+<div ng-if="showIndex" ng-controller="indexController" ng-include="templateUrl.index"></div>
+<div ng-if="showEdit" ng-controller="editController" ng-include="templateUrl.edit"></div>
