@@ -1,34 +1,7 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@using DAL.Models
-@model List<Film>
 
-<!DOCTYPE html>
+<div ng-controller="indexController" ng-include="templateUrl.index"></div>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Paul Walker Tracker</title>
-    <base href="/" />
-</head>
-<body>
-<div class="query">
-    @using (Html.BeginForm())
-    {
-        <div>
-            @Html.Label("Search:")            
-            <input placeholder="Search..."/>
-        </div>
-    }
-</div>
-
-<div class="add-films">
-    @Html.ActionLink("Add New Film", "CreateNewFilm", "Index")
-</div>
-
-<div class="full-list">
-    @RenderPage("_FullList.cshtml")
-</div>
-</body>
-</html>
+<h1>Here</h1>

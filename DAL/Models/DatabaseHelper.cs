@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-using DAL.Models.SQL;
+using DAL.Models;
 
 namespace DAL.Models
 {
@@ -76,15 +76,6 @@ namespace DAL.Models
                 db.Film.Add(film);
                 db.SaveChanges();
                 db.Dispose();
-            }
-        }
-
-        public void DeleteDatabase()
-        {
-            using (var db = new PaulContext())
-            {
-                db.Database.Connection.Close();
-                db.Database.Delete();
             }
         }
     }
