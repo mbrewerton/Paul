@@ -42,31 +42,40 @@ angular.module('paul')
             };
 
             $scope.toggleEdit = function (film) {
+                
+                $scope.editing = !$scope.editing;
+
                 if (film) {
-                    $scope.editing = true;
-                    $scope.filmToEdit = film;
+                    $scope.filmsModel = film;
+                    console.log('>> film : ', film);
+                    console.log('>> filmsModel : ', $scope.filmsModel);
                 } else {
-                    $scope.editing = false;
-                    $scope.filmToEdit = {};
+                    $scope.filmsModel = {
+                        Id: "",
+                        FilmName: "",
+                        ReleaseDate: "",
+                        Genre: "",
+                        ImdbRating: "",
+                        MyRating: "",
+                        Synopsis: "",
+                        Watched: false  
+                    };
                 }
             };
 
             $scope.saveFilm = function (film) {
-                $scope.test(film);
-            };
+                $scope.isSaving = true;
+                filmFactory.saveFilm($scope.filmsModel).$promise.then(
+                    function () {
+                        toastr.success("Film saved successfully!");
+                        $scope.getFilms();
+                        $scope.toggleEdit();
+                    }, function () {
+                        toastr.error("Error.");
+                    }
+                );
 
-            $scope.addEmptyFilm = function () {
-                $scope.editing = true;
-                $scope.filmsModel = [{
-                    Id: "",
-                    FilmName: "",
-                    ReleaseDate: "",
-                    Genre: "",
-                    ImdbRating: "",
-                    MyRating: "",
-                    Synopsis: "",
-                    Watched: false
-                }];
+                $scope.isSaving = false;
             };
 
             $scope.test = function (data) {

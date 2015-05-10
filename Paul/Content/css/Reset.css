@@ -24,26 +24,4 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-section.main {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #f6f6f6;
-  padding: 20px 10px; }
-
-body {
-  font-family: 'Arial';
-  font-size: 14px; }
-
-h1 {
-  font-size: 14px; }
-
-h2 {
-  font-size: 14px; }
-
-h3 {
-  font-size: 14px; }
-
-table {
-  width: 100%; }
-
-/*# sourceMappingURL=site.css.map */
+/*# sourceMappingURL=Reset.css.map */

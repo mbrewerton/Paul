@@ -11,7 +11,6 @@
         Bundle.Css()
         .Add("~/Content/css/site.min.css")
         .Add("~/Content/css/toastr.min.css")
-        .Add("~/Content/css/FontAwesome/css/font-awesome.min.css")
         .Render("~/Content/css/min/style_#.min.css")
     )
     @Html.Raw(
@@ -22,7 +21,7 @@
 
 </head>
 <body>
-    <section data-ng-app="paul" ng-controller="pageController">
+    <section class="main" data-ng-app="paul" ng-controller="pageController">
         @RenderBody()
     </section>
 

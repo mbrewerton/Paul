@@ -80,10 +80,15 @@
     <Compile Include="Migrations\201502131442246_RemovedMaxLengthFromSynopsis.Designer.cs">
       <DependentUpon>201502131442246_RemovedMaxLengthFromSynopsis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505081129041_SynopsisNotRequired.cs" />
+    <Compile Include="Migrations\201505081129041_SynopsisNotRequired.Designer.cs">
+      <DependentUpon>201505081129041_SynopsisNotRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DatabaseHelper.cs" />
     <Compile Include="Models\Dto\FilmDto.cs" />
     <Compile Include="Models\Mapper\AutoMapperServicesConfiguration.cs" />
+    <Compile Include="Models\Mapper\DtoToEntity\FilmProfile.cs" />
     <Compile Include="Models\Mapper\EntityToDto\FilmDtoProfile.cs" />
     <Compile Include="Models\PaulContext.cs" />
     <Compile Include="Models\Dto\PaulViewModel.cs" />
@@ -116,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502131442246_RemovedMaxLengthFromSynopsis.resx">
       <DependentUpon>201502131442246_RemovedMaxLengthFromSynopsis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505081129041_SynopsisNotRequired.resx">
+      <DependentUpon>201505081129041_SynopsisNotRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

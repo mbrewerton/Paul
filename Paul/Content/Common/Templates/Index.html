@@ -3,7 +3,6 @@
 <table>
     <thead>
         <tr>
-            <th>Id</th>
             <th>Name</th>
             <th>Release Date</th>
             <th>Genre</th>
@@ -19,7 +18,6 @@
             <td colspan="8"><i class="fa fa-spinner fa-spin"></i> Loading data...</td>
         </tr>
         <tr ng-if="!loading" ng-repeat="film in films">
-            <td>{{film.Id}}</td>
             <td>{{film.FilmName}}</td>
             <td >{{film.ReleaseDate}}</td>
             <td>{{film.Genre}}</td>
@@ -40,16 +38,21 @@
         </tr>
         <tr>
             <td colspan="8">
-                <button ng-click="addEmptyFilm()">Add New Film</button>
+                <button ng-click="toggleEdit()">Add New Film</button>
             </td>
         </tr>
     </tbody>
 </table>
 
 <div ng-if="editing">
-    <label>Film Name: </label><input type="text" ng-model="filmToEdit.FilmName" />
-    <label>Genre: </label><input type="text" ng-model="filmToEdit.Genre" />
+    <label>Film Name: </label><input type="text" ng-model="filmsModel.FilmName" /><br />
+    <label>Release Date: </label><input type="text" ng-model="filmsModel.ReleaseDate" /><br />
+    <label>Genre: </label><input type="text" ng-model="filmsModel.Genre" /><br />
+    <label>Imdb Rating: </label><input type="text" ng-model="filmsModel.ImdbRating" /><br />
+    <label>My Rating: </label><input type="text" ng-model="filmsModel.MyRating" /><br />
+    <label>Synopsis: </label><textarea ng-model="filmsModel.Synopsis"></textarea><br />
+    <label>Watched? </label><input type="checkbox" ng-model="filmsModel.Watched" ng-checked="filmsModel.Watched"/>{{filmsModel.Watched}}<br />
 
     <button ng-click="toggleEdit()">Cancel</button>
-    <button ng-click="saveFilm(filmToEdit)">Save</button>
+    <button ng-click="saveFilm(filmsModel)">Save</button><i ng-if="isSaving" class="fa fa-spin fa-spinner fa2x"></i>
 </div>

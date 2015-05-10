@@ -16,6 +16,7 @@ namespace DAL.Mapping
                 {
                     // Entity to Dto
                     cfg.AddProfile(new FilmDtoProfile());
+                    cfg.AddProfile(new FilmProfile());
                 });
         }
     }

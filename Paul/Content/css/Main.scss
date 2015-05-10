@@ -1,0 +1,25 @@
+﻿@import 'Config';
+
+section.main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $color-main;
+    padding: $padding-main $padding-main-sides;
+}
+
+body {
+    font-family: 'Arial';
+    font-size: $font-size-main;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}

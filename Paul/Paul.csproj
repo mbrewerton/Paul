@@ -135,13 +135,37 @@
     <Content Include="Content\Common\Templates\Index.html" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\Config.css">
+      <DependentUpon>Config.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Config.min.css">
+      <DependentUpon>Config.css</DependentUpon>
+    </Content>
     <Content Include="Content\css\FontAwesome\css\font-awesome.min.css" />
     <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.svg" />
+    <Content Include="Content\css\Main.css">
+      <DependentUpon>Main.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Main.min.css">
+      <DependentUpon>Main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Reset.css">
+      <DependentUpon>Reset.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Reset.min.css">
+      <DependentUpon>Reset.css</DependentUpon>
+    </Content>
     <Content Include="Content\css\site.css">
       <DependentUpon>site.scss</DependentUpon>
     </Content>
     <Content Include="Content\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Table.css">
+      <DependentUpon>Table.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Table.min.css">
+      <DependentUpon>Table.css</DependentUpon>
     </Content>
     <Content Include="Content\css\toastr.min.css" />
     <Content Include="Content\j\angular-resource.min.js" />
@@ -159,10 +183,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Areas\Paul\Views\Home\Index.cshtml" />
-    <Content Include="Content\css\site.scss" />
-    <Content Include="Content\css\site.css.map">
-      <DependentUpon>site.css</DependentUpon>
-    </Content>
     <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.eot" />
     <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.ttf" />
     <Content Include="Content\css\FontAwesome\font\fontawesome-webfont.woff" />
@@ -185,6 +205,26 @@
     <Content Include="Content\css\FontAwesome\scss\_mixins.scss" />
     <Content Include="Content\css\FontAwesome\scss\_path.scss" />
     <Content Include="Content\css\FontAwesome\scss\_variables.scss" />
+    <Content Include="Content\css\Config.scss" />
+    <Content Include="Content\css\Config.css.map">
+      <DependentUpon>Config.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Main.scss" />
+    <Content Include="Content\css\Main.css.map">
+      <DependentUpon>Main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\site.scss" />
+    <Content Include="Content\css\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Reset.scss" />
+    <Content Include="Content\css\Reset.css.map">
+      <DependentUpon>Reset.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Table.scss" />
+    <Content Include="Content\css\Table.css.map">
+      <DependentUpon>Table.css</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

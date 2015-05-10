@@ -47,5 +47,39 @@ namespace DAL.Services
 
             return filmsList;
         }
+
+        public void SaveFilm(FilmDto film)
+        {
+            var id = film.Id;
+            var newFilm = Mapper.Map<FilmDto, Film>(film);
+            Film oldFilm;
+            if (id == 0)
+            {
+                using (var db = new PaulContext())
+                {
+                    db.Film.Add(Mapper.Map<FilmDto, Film>(film));
+                    db.SaveChanges();
+                }
+            }
+            else
+            {
+                using (var db = new PaulContext())
+                {
+                    oldFilm = db.Film
+                        .Where(x => x.Id == id).FirstOrDefault();
+                }
+
+                if (oldFilm != null)
+                    oldFilm = newFilm;
+                else
+                    throw new NullReferenceException("Could not find the film to modify.");
+
+                using (var db = new PaulContext())
+                {
+                    db.Entry(newFilm).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
+            }
+        }
     }
 }

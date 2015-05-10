@@ -13,6 +13,10 @@ angular.module('paul')
                     method: "GET",
                     url: "api/Film/Search",
                     isArray: true
+                },
+                saveFilm: {
+                    method: "POST",
+                    url: "api/Film/SaveFilm"
                 }
             });
         }
